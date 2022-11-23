@@ -31,11 +31,10 @@ public class List extends AppCompatActivity {
         setContentView(R.layout.activity_list);
 
         listView = (ListView) findViewById(R.id.list_view);
-        items.add(new Member("Paracetamon","Thuốc đau đầu", "Bột kết tinh trắng ,không màu\n Công dụng trị đau đầu\n Liều chung: 325 - 650mg/ liều cách 4-6 giờ hoặc 1000mg cách 6-8 giờ bằng đường uống hoặc đặt hậu môn \n Luu ý: Nếu sử dụng viên nén Paracetamol 500mg: 1–2 viên/liều uống cách nhau 4-6 giờ.","trị đau đầu",R.drawable.thuoc_para)) ;
-        items.add(new Member("Phạm Minh Tùng","Thiếu tá", "Hà Tĩnh","",R.drawable.anhthuoc)) ;
-        items.add(new Member("Nguyễn Ngọc Thương","Trung Tá", "Hà Tĩnh","",R.drawable.anhthuoc));
-        items.add(new Member("Trần Thị NGọc ","Trung tá", "Quảng Ninh","",R.drawable.anhthuoc));
-
+        items.add(new Member("Paracetamon","Thuốc đau đầu", "Bột kết tinh trắng ,không màu" ,"Công dụng:trị đau đầu"," Liều chung: 325 - 650mg/ liều cách 4-6 giờ hoặc 1000mg cách 6-8 giờ bằng đường uống hoặc đặt hậu môn","Luu ý: Nếu sử dụng viên nén Paracetamol 500mg: 1–2 viên/liều uống cách nhau 4-6 giờ.",R.drawable.thuoc_para)) ;
+        items.add(new Member("acid acetylsalicylic","Aspirin", "Bột kết tinh trắng ,không màu","Công dụng:hạ sốt","Giảm đau, hạ sốt: Uống 300 – 900 mg. Lặp lại liều sau mỗi 4 – 6 giờ nếu cần. Liều tối đa: 4 g/ngày.","Không dùng khi dị ứng với các thành phần nào của thuốc ",R.drawable.thuoc_apirin)) ;
+        items.add(new Member("Paracetamon","Thuốc đau đầu", "Bột kết tinh trắng ,không màu" ,"Công dụng:trị đau đầu"," Liều chung: 325 - 650mg/ liều cách 4-6 giờ hoặc 1000mg cách 6-8 giờ bằng đường uống hoặc đặt hậu môn","Luu ý: Nếu sử dụng viên nén Paracetamol 500mg: 1–2 viên/liều uống cách nhau 4-6 giờ.",R.drawable.thuoc_para)) ;
+        items.add(new Member("Viaga","Thuốc đau đầu", "Bột kết tinh trắng ,không màu" ,"Công dụng:trị đau đầu"," Liều chung: 325 - 650mg/ liều cách 4-6 giờ hoặc 1000mg cách 6-8 giờ bằng đường uống hoặc đặt hậu môn","Luu ý: Nếu sử dụng viên nén Paracetamol 500mg: 1–2 viên/liều uống cách nhau 4-6 giờ.",R.drawable.anhthuoc)) ;
         adapter = new Adapter(List.this,items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -61,7 +60,7 @@ public class List extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Xacnhanxoa(i);
-                return false;
+                return true;
             }
         });
     }
@@ -110,13 +109,15 @@ public class List extends AppCompatActivity {
         TextView tv2 = (TextView) dialog.findViewById(R.id.isTentg);
         TextView tv3 = (TextView) dialog.findViewById(R.id.isMausac);
         TextView tv4 = (TextView) dialog.findViewById(R.id.dactinh);
+        TextView tv5 = (TextView) dialog.findViewById(R.id.lieudung);
+        TextView tv6 = (TextView) dialog.findViewById(R.id.luuy);
 
         Button btok = (Button) dialog.findViewById(R.id.btn_okC);
         Button btcancel = (Button) dialog.findViewById(R.id.btn_cancelC);
         btok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Member member = new Member(tv1.getText().toString(),tv2.getText().toString(),tv3.getText().toString(),tv4.getText().toString(),R.drawable.ic_launcher_background);
+                Member member = new Member(tv1.getText().toString(),tv2.getText().toString(),tv3.getText().toString(),tv4.getText().toString(),tv5.getText().toString(),tv6.getText().toString(),R.drawable.ic_launcher_background);
                 items.add(member);
                 adapter.notifyDataSetChanged();
                 dialog.cancel();

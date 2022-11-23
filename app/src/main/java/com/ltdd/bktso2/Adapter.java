@@ -39,17 +39,19 @@ public class Adapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = activity.getLayoutInflater();
         view = inflater.inflate(R.layout.activity_item, null);
-        TextView tvName = (TextView) view.findViewById(R.id.tv_name);
-        TextView tvNgheDanh = (TextView) view.findViewById(R.id.tv_nickname);
-        TextView tvQue = (TextView) view.findViewById(R.id.tv_countryside);
-        TextView tvLuotThich = (TextView) view.findViewById(R.id.tv_color);
+        TextView tvtenkh = (TextView) view.findViewById(R.id.tv_namei);
+        TextView tvtenthuonggoi = (TextView) view.findViewById(R.id.tv_nicknamei);
+        TextView tvdactinh = (TextView) view.findViewById(R.id.tv_dactinhi);
+        TextView tvcongdung = (TextView) view.findViewById(R.id.tv_congdungi);
+        TextView tvlieudung = (TextView) view.findViewById(R.id.tv_lieudungi);
+        TextView tvluuy = (TextView) view.findViewById(R.id.tv_luuyi);
         ImageView imageView = (ImageView) view.findViewById(R.id.imgHinh);
-        tvName.setText(items.get(i).getTenkhoahoc());
-        tvNgheDanh.setText(items.get(i).getTenthuonggoi());
-        tvQue.setText(items.get(i).getDactinh());
-        tvLuotThich.setText(String.valueOf(items.get(i).getCongdung()));
-        tvNgheDanh.setText(items.get(i).getLieudung());
-        tvQue.setText(items.get(i).getLuuy());
+        tvtenkh.setText(items.get(i).getTenkhoahoc());
+        tvtenthuonggoi.setText(items.get(i).getTenthuonggoi());
+        tvdactinh.setText(items.get(i).getDactinh());
+        tvcongdung.setText(String.valueOf(items.get(i).getCongdung()));
+        tvlieudung.setText(items.get(i).getLieudung());
+        tvluuy.setText(items.get(i).getLuuy());
         imageView.setImageResource(items.get(i).getHinhAnh());
         return view;
     }

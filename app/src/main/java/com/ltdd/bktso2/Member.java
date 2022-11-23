@@ -4,6 +4,24 @@ public class Member {
     String tenkhoahoc,tenthuonggoi,dactinh,congdung,lieudung,luuy;
     int hinhAnh;
 
+    public Member(String tenkhoahoc, String tenthuonggoi, String dactinh, String congdung, int hinhAnh) {
+        this.tenkhoahoc = tenkhoahoc;
+        this.tenthuonggoi = tenthuonggoi;
+        this.dactinh = dactinh;
+        this.congdung = congdung;
+        this.hinhAnh = hinhAnh;
+    }
+
+    public Member(String tenkhoahoc, String tenthuonggoi, String dactinh, String congdung, String lieudung, String luuy, int hinhAnh) {
+        this.tenkhoahoc = tenkhoahoc;
+        this.tenthuonggoi = tenthuonggoi;
+        this.dactinh = dactinh;
+        this.congdung = congdung;
+        this.lieudung = lieudung;
+        this.luuy = luuy;
+        this.hinhAnh = hinhAnh;
+    }
+
     public String getTenkhoahoc() {
         return tenkhoahoc;
     }
@@ -16,7 +34,7 @@ public class Member {
         return tenthuonggoi;
     }
 
-    public void setTenthuonggoi(String nghedanh) {
+    public void setTenthuonggoi(String tenthuonggoi) {
         this.tenthuonggoi = tenthuonggoi;
     }
 
@@ -29,23 +47,22 @@ public class Member {
     }
 
     public String getCongdung() {
-
         return congdung;
     }
 
     public void setCongdung(String congdung) {
         this.congdung = congdung;
     }
-    public String getLieudung() {
 
+    public String getLieudung() {
         return lieudung;
     }
 
     public void setLieudung(String lieudung) {
-        this.congdung = lieudung;
+        this.lieudung = lieudung;
     }
-    public String getLuuy() {
 
+    public String getLuuy() {
         return luuy;
     }
 
@@ -58,16 +75,6 @@ public class Member {
     }
 
     public void setHinhAnh(int hinhAnh) {
-        this.hinhAnh = hinhAnh;
-    }
-
-    public Member(String tenkhoahoc, String tenthuonggoi, String dactinh, String mausac, int hinhAnh) {
-        this.tenkhoahoc = tenkhoahoc;
-        this.tenthuonggoi = tenthuonggoi;
-        this.dactinh = dactinh;
-        this.congdung = congdung;
-        this.lieudung = lieudung;
-        this.luuy = luuy;
         this.hinhAnh = hinhAnh;
     }
 }

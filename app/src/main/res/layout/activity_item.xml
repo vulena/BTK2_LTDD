@@ -8,19 +8,20 @@
 
     <ImageView
         android:id="@+id/imgHinh"
-        android:layout_width="106dp"
-        android:layout_height="129dp"
+        android:layout_width="114dp"
+        android:layout_height="187dp"
         android:src="@drawable/ic_facebook" />
 
     <LinearLayout
         android:layout_width="295dp"
-        android:layout_height="129dp"
+        android:layout_height="197dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tv_namei"
             android:layout_width="match_parent"
             android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/imgHinh"
             android:fontFamily="sans-serif-medium"
             android:paddingLeft="10dp"
@@ -29,10 +30,11 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/tv_nickname"
+            android:id="@+id/tv_nicknamei"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_namei"
             android:layout_toRightOf="@id/imgHinh"
             android:text="Tên Thường Gọi:"
             android:textColor="@color/white"
@@ -40,9 +42,10 @@
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/tv_countryside"
+            android:id="@+id/tv_dactinhi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:text="Đặc Tính"
             android:textColor="@color/white"
             android:textSize="15dp"
@@ -54,32 +57,35 @@
 
 
             <TextView
-                android:id="@+id/tv_color"
+                android:id="@+id/tv_congdungi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Công dụng"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="italic" />
 
-            <TextView
-                android:id="@+id/tv_lieudung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Liều dùng"
-                android:layout_marginLeft="50dp"
-                android:textColor="@color/white"
-                android:textSize="15dp"
-                android:textStyle="italic" />
 
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_luuy"
+            android:id="@+id/tv_lieudungi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Liều dùng"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_luuyi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lưu ý"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/white"
             android:textSize="14dp"
             android:textStyle="italic" />

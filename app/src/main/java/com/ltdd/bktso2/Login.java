@@ -54,10 +54,12 @@ public class Login extends AppCompatActivity {
             }
         });
         button.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SuspiciousIndentation")
             @Override
             public void onClick(View view) {
                 if (ktra){
-                    startActivity(new Intent(Login.this,List.class));
+                    xuLyDangNhap();
+                    //startActivity(new Intent(Login.this,List.class));
                     System.out.println("login");
                 }else
                     xuLyDangKy();
