@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail"
+    android:background="@drawable/bg_admedi">
+
+
+    <TextView
+        android:id="@+id/thongtin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="THÔNG TIN CHI TIẾT"
+        android:textColor="@color/pinkColor"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/thongtin_hinh"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/bg_home" />
+    <TextView
+        android:id="@+id/thongtin_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="Loại thuốc"
+        android:textColor="@color/pinkColor"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/thongtin_chitiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="left"
+        android:text="Thông tin chi tiết:"
+        android:textColor="@color/pinkColor"
+        android:textSize="16dp" />
+</RelativeLayout>

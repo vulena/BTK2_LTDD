@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/pinkColor">
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="106dp"
+        android:layout_height="129dp"
+        android:src="@drawable/ic_facebook" />
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="129dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_toRightOf="@id/imgHinh"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:text="Tên Khoa Học"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/imgHinh"
+            android:text="Tên Thường Gọi:"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_countryside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặc Tính"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Công dụng"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_lieudung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liều dùng"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_luuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu ý"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>
